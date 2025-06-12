@@ -4,26 +4,28 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import joblib
-import os
 
 app = Flask(__name__)
 CORS(app)
 
-# Caminhos dos arquivos (Render usa raiz do projeto)
-modelo_path = "modelo_perfis.keras"
-encoder_path = "encoder_perfis.npy"
-scaler_path = "scaler_perfis.pkl"
-colunas_path = "colunas_treinadas.pkl"
-csv_paises = "base_paises_perfis.csv"
+# Variáveis globais para lazy-loading
+model = None
+classes = None
+scaler = None
+colunas_treinadas = None
+df_paises = None
 
-# Carregando os arquivos na memória ao iniciar o app
-model = tf.keras.models.load_model(modelo_path)
-classes = np.load(encoder_path, allow_pickle=True)
-scaler = joblib.load(scaler_path)
-colunas_treinadas = joblib.load(colunas_path)
-df_paises = pd.read_csv(csv_paises)
+# Carregamento só na primeira requisição
+def carregar_tudo():
+    global model, classes, scaler, colunas_treinadas, df_paises
+    if model is None:
+        model = tf.keras.models.load_model("modelo_perfis.keras")
+        classes = np.load("encoder_perfis.npy", allow_pickle=True)
+        scaler = joblib.load("scaler_perfis.pkl")
+        colunas_treinadas = joblib.load("colunas_treinadas.pkl")
+        df_paises = pd.read_csv("base_paises_perfis.csv", low_memory=True)
 
-# Mapeamento entre classe prevista e nome no CSV
+# Mapeamento entre modelo e nome legível
 mapa_perfis = {
     "Sol e Praia": "Sol e Praia",
     "Cultura e História": "Cultura e História",
@@ -37,20 +39,19 @@ def home():
 
 @app.route('/prever', methods=['POST'])
 def prever():
-    dados = request.json
+    carregar_tudo()
 
+    dados = request.json
     if not dados or 'binarios' not in dados or 'preferencias' not in dados:
         return jsonify({'erro': 'Dados incompletos'}), 400
 
     binarios = dados['binarios']
     preferencias = dados['preferencias']
 
-    # Prepara os dados do usuário
     df_usuario = pd.DataFrame([binarios])
     df_usuario = df_usuario.reindex(columns=colunas_treinadas, fill_value=0)
     X_usuario = scaler.transform(df_usuario)
 
-    # Faz a previsão com o modelo
     pred = model.predict(X_usuario)
     indice_predito = np.argmax(pred)
     perfil_previsto = classes[indice_predito]
@@ -66,7 +67,6 @@ def prever():
         "orcamento": preferencias["orcamento"].replace("_", "-").lower().strip()
     }
 
-    # Filtra países com o perfil previsto
     candidatos = df_paises[df_paises["perfil"].str.lower() == perfil_csv.lower()].copy()
 
     if candidatos.empty:
@@ -76,7 +76,6 @@ def prever():
             'mensagem': "Nenhum país com esse perfil."
         })
 
-    # Função de pontuação com pesos
     def pontuar(linha):
         score = 0
         if prefs["continente"] in linha["continente"].lower():
@@ -108,6 +107,5 @@ def prever():
         'mensagem': f"Baseado no perfil '{perfil_previsto}', recomendamos estes destinos."
     })
 
-# IMPORTANTE: não usar debug em produção!
 if __name__ == '__main__':
     app.run()
