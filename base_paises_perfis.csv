@@ -1,0 +1,100 @@
+nome,perfil,idioma,continente,cultura,orcamento
+Brasil,Frio e Montanha,portugues,america,misturada,2000_5000
+Portugal,Sol e Praia,portugues,europa,parecida,mais10000
+Canadá,Frio e Montanha,ingles,america,misturada,2000_5000
+Japão,Frio e Montanha,qualquer,asia,diferente,mais10000
+Itália,Aventura e Natureza,qualquer,europa,parecida,2000_5000
+Austrália,Aventura e Natureza,ingles,oceania,misturada,ate2000
+Argentina,Sol e Praia,espanhol,america,parecida,5000_10000
+África do Sul,Aventura e Natureza,ingles,africa,misturada,2000_5000
+México,Frio e Montanha,espanhol,america,misturada,mais10000
+Espanha,Frio e Montanha,espanhol,europa,parecida,2000_5000
+Alemanha,Aventura e Natureza,qualquer,europa,misturada,mais10000
+Egito,Sol e Praia,qualquer,africa,forte,5000_10000
+Grécia,Cultura e História,qualquer,europa,misturada,ate2000
+Turquia,Aventura e Natureza,qualquer,asia,misturada,ate2000
+Suíça,Aventura e Natureza,qualquer,europa,misturada,mais10000
+Chile,Frio e Montanha,espanhol,america,forte,2000_5000
+Peru,Cultura e História,espanhol,america,forte,2000_5000
+China,Cultura e História,qualquer,asia,forte,mais10000
+Coreia do Sul,Aventura e Natureza,qualquer,asia,forte,ate2000
+Tailândia,Frio e Montanha,qualquer,asia,forte,5000_10000
+Índia,Sol e Praia,ingles,asia,forte,5000_10000
+Indonésia,Frio e Montanha,qualquer,asia,diferente,mais10000
+Nova Zelândia,Frio e Montanha,ingles,oceania,misturada,2000_5000
+Marrocos,Aventura e Natureza,qualquer,africa,diferente,ate2000
+Tunísia,Cultura e História,qualquer,africa,forte,mais10000
+Polônia,Frio e Montanha,qualquer,europa,forte,2000_5000
+Ucrânia,Frio e Montanha,qualquer,europa,misturada,mais10000
+Irlanda,Aventura e Natureza,ingles,europa,misturada,mais10000
+Escócia,Sol e Praia,ingles,europa,misturada,2000_5000
+Noruega,Cultura e História,qualquer,europa,diferente,ate2000
+Suécia,Aventura e Natureza,qualquer,europa,diferente,ate2000
+Finlândia,Sol e Praia,qualquer,europa,misturada,5000_10000
+Dinamarca,Aventura e Natureza,qualquer,europa,misturada,mais10000
+Islândia,Frio e Montanha,qualquer,europa,diferente,2000_5000
+Rússia,Sol e Praia,qualquer,europa,diferente,ate2000
+Estados Unidos,Aventura e Natureza,ingles,america,misturada,ate2000
+Colômbia,Cultura e História,espanhol,america,misturada,2000_5000
+Venezuela,Cultura e História,espanhol,america,parecida,2000_5000
+Equador,Cultura e História,espanhol,america,forte,ate2000
+Bolívia,Frio e Montanha,espanhol,america,forte,mais10000
+Uruguai,Aventura e Natureza,espanhol,america,misturada,mais10000
+Paraguai,Sol e Praia,espanhol,america,misturada,ate2000
+Cuba,Aventura e Natureza,espanhol,america,parecida,5000_10000
+República Dominicana,Cultura e História,espanhol,america,forte,ate2000
+Honduras,Cultura e História,espanhol,america,forte,mais10000
+Guatemala,Aventura e Natureza,espanhol,america,misturada,mais10000
+Nicarágua,Frio e Montanha,espanhol,america,misturada,mais10000
+El Salvador,Sol e Praia,espanhol,america,misturada,ate2000
+Panamá,Cultura e História,espanhol,america,forte,5000_10000
+Costa Rica,Frio e Montanha,espanhol,america,parecida,mais10000
+Jamaica,Sol e Praia,ingles,america,misturada,2000_5000
+Trinidad e Tobago,Cultura e História,ingles,america,parecida,2000_5000
+Haiti,Frio e Montanha,qualquer,america,parecida,5000_10000
+Filipinas,Cultura e História,ingles,asia,misturada,mais10000
+Malásia,Frio e Montanha,qualquer,asia,misturada,ate2000
+Singapura,Cultura e História,ingles,asia,parecida,2000_5000
+Vietnã,Cultura e História,qualquer,asia,diferente,ate2000
+Camboja,Sol e Praia,qualquer,asia,misturada,2000_5000
+Laos,Aventura e Natureza,qualquer,asia,parecida,mais10000
+Mianmar,Sol e Praia,qualquer,asia,forte,5000_10000
+Nepal,Frio e Montanha,qualquer,asia,forte,ate2000
+Butão,Cultura e História,qualquer,asia,parecida,ate2000
+Paquistão,Aventura e Natureza,ingles,asia,diferente,2000_5000
+Bangladesh,Cultura e História,ingles,asia,forte,2000_5000
+Sri Lanka,Frio e Montanha,ingles,asia,parecida,mais10000
+Maldivas,Sol e Praia,qualquer,asia,parecida,mais10000
+Irã,Cultura e História,qualquer,asia,diferente,mais10000
+Iraque,Frio e Montanha,qualquer,asia,forte,2000_5000
+Israel,Cultura e História,qualquer,asia,forte,mais10000
+Palestina,Aventura e Natureza,qualquer,asia,diferente,mais10000
+Líbano,Aventura e Natureza,qualquer,asia,forte,ate2000
+Síria,Frio e Montanha,qualquer,asia,parecida,5000_10000
+Arábia Saudita,Cultura e História,qualquer,asia,diferente,5000_10000
+Emirados Árabes,Sol e Praia,qualquer,asia,forte,2000_5000
+Catar,Aventura e Natureza,qualquer,asia,forte,mais10000
+Omã,Frio e Montanha,qualquer,asia,parecida,2000_5000
+Iêmen,Frio e Montanha,qualquer,asia,diferente,5000_10000
+Quênia,Aventura e Natureza,ingles,africa,parecida,ate2000
+Tanzânia,Frio e Montanha,ingles,africa,parecida,ate2000
+Uganda,Aventura e Natureza,ingles,africa,parecida,2000_5000
+Ruanda,Sol e Praia,qualquer,africa,misturada,5000_10000
+Nigéria,Sol e Praia,ingles,africa,parecida,2000_5000
+Gana,Frio e Montanha,ingles,africa,forte,ate2000
+Senegal,Aventura e Natureza,qualquer,africa,misturada,mais10000
+Costa do Marfim,Aventura e Natureza,qualquer,africa,forte,2000_5000
+Camarões,Sol e Praia,qualquer,africa,misturada,ate2000
+Zimbábue,Frio e Montanha,ingles,africa,diferente,2000_5000
+Zâmbia,Aventura e Natureza,ingles,africa,parecida,5000_10000
+Namíbia,Cultura e História,qualquer,africa,forte,mais10000
+Botsuana,Sol e Praia,qualquer,africa,forte,mais10000
+Moçambique,Cultura e História,portugues,africa,misturada,mais10000
+Angola,Frio e Montanha,portugues,africa,misturada,mais10000
+Cabo Verde,Cultura e História,portugues,africa,parecida,5000_10000
+São Tomé e Príncipe,Aventura e Natureza,portugues,africa,diferente,mais10000
+Guiné-Bissau,Sol e Praia,portugues,africa,diferente,ate2000
+Timor-Leste,Cultura e História,portugues,asia,forte,5000_10000
+Papua-Nova Guiné,Sol e Praia,ingles,oceania,parecida,ate2000
+Ilhas Fiji,Cultura e História,ingles,oceania,forte,mais10000
+Ilhas Malvinas,Aventura e Natureza,ingles,america,misturada,ate2000
