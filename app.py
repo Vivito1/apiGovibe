@@ -6,7 +6,7 @@ import tensorflow as tf
 import joblib
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/prever": {"origins": "*"}}, supports_credentials=True)
 
 # Variáveis globais para lazy-loading
 model = None
